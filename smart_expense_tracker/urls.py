@@ -22,4 +22,9 @@ urlpatterns = [
     path('api/users/', include('users.urls')),
     path('api/budget/', include('budget.urls')),
     path('api/expenses/', include('expenses.urls')),
+
+#djoser urls for authentication
+    path('auth/', include('djoser.urls')),
+    path('auth/', include('djoser.urls.authtoken')),
+    path('auth/', include('djoser.urls.jwt')),
 ]
